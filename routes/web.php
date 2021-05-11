@@ -12,5 +12,6 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return bcrypt('admin888');
 });
+include base_path('routes/admin/admin.php');
